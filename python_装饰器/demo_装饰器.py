@@ -1,6 +1,7 @@
 # 编写装饰器，为函数加上统计时间的功能
 import time
 def wrap(f):
+    #111
     def wrapper(*args,**kwargs):
         startTime=time.time()
         print('********'*2)

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style type="text/css">
+        body{background: #f8f8f8}
+        .img_content{position: relative}
+        .img_content>input{position:absolute;left: 2px;top: 0}
+        /*.img_content>img{position:relative;left: 10px}*/
+        .container-fluid{margin-left: 100px;margin-top: 10px}
+        .tab_1,.tab_2>span{padding: 6px;}
+        .tab_1{
+            float: left;
+        }
+        .tab_2{
+            float: right;
+        }
+        .tab_head>img,.img_btn{
+            float: left;
+        }
+        .img_btn input{width:600px;margin-top: 20px;border:2px solid red}
+        #table_content{
+            text-align: center;
+            /*margin: 20px;*/
+            border: 1px solid #bce8f1
+        }
+        .img_content{float: left;}
+        .tab_same{background: #c9e2b3}
+        .content_one{border-bottom: 1px solid #bce8f1}
+        .last_tab{float: left}
+        .last_tab>input, .last_tab>span{margin-top: 24px}
+        .last_tab_2{float: right}
+        .tab_same,.tab_same>span{height: 40px;padding: 5px}
+        .color_tab{color: red}
+        #tab_head{background: whitesmoke}
+        .c{color: grey}
+    </style>
+</head>
+<body class="container-fluid">
+<!--头部-->
+<div class="clearfix" id="tab_head">
+    <p></p>
+    <p class="tab_1">亲,请登录 免费注册</p>
+    <p class="tab_2">
+        <span>商城首页</span>
+        <span class="glyphicon glyphicon-user">个人中心</span>
+        <span class="glyphicon glyphicon-shopping-cart">购物车0</span>
+        <span class="glyphicon glyphicon-heart">收藏夹</span>
+    </p>
+</div>
+<div class="container-fluid">
+    <!--图片,搜索框部分 按钮部分-->
+    <div class="tab_head clearfix">
+        <img src="photo/logobig.png">
+        <div class="img_btn" style="border:0">
+            <span><input type="text" placeholder="搜索" style="height: 45px" >
+                <button style="height:45px;margin-left: -5px;background: red;width: 90px">搜索</button></span>
+        </div>
+    </div>
+    <!--内容部分-->
+    <div id="content_all">
+        <table cellspacing="0"  cellpadding="0"  id="table_content">
+            <tr>
+                <th width="600px" height="30px">商品信息</th>
+                <th width="80px" height="30px"  style="text-align: center">单价</th>
+                <th width="80px" height="30px"  style="text-align: center">数量</th>
+                <th width="80px" height="30px"  style="text-align: center">金额</th>
+                <th width="80px" height="30px"  style="text-align: center">操作</th>
+            </tr>
+            <tr><td><p></p></td></tr>
+            <tr>
+                <td colspan="5" style="text-align: left" >
+                    <div class="tab_same">
+                        <span class="color_tab">已享优惠:省19.50 </span>
+                        <span>第二支半价,第三支免费</span>
+                        <span class="glyphicon glyphicon-forward"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="content_one">
+                <td height="100px" width="100px">
+                    <div class="img_content">
+                        <input type="checkbox">
+                        <img src="photo/comment.jpg_400x400.jpg" style="height: 100px;width: 100px">
+                        <span>美康粉黛醉美唇膏 持久保湿</span>  <span class="c">颜色:12#川南玛瑙 包装:裸装</span>
+                    </div>
+                </td>
+                <td>
+                    <p><s>78.00</s></p>
+                    <p>39.00</p>
+                </td>
+                <td>
+                    - <label><input type="text" value="1" style="width: 20px"></label> +
+                </td>
+                <td>117.00</td>
+                <td>
+                    <p>移入收藏夹</p>
+                    <p>删除</p>
+                </td>
+            </tr>
+            <tr class="content_one">
+                <td height="100px" width="100px">
+                    <div class="img_content">
+                        <input type="checkbox">
+                        <img src="photo/comment.jpg_400x400.jpg" style="height: 100px;width: 100px">
+                        <span>美康粉黛醉美唇膏 持久保湿</span>  <span class="c">颜色:12#川南玛瑙 包装:裸装</span>
+                    </div>
+                </td>
+                <td>
+                    <p><s>78.00</s></p>
+                    <p>39.00</p>
+                </td>
+                <td>
+                    - <label><input type="text" value="1" style="width: 20px"></label> +
+                </td>
+                <td>117.00</td>
+                <td>
+                    <p>移入收藏夹</p>
+                    <p>删除</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: left" >
+                    <div class="tab_same">
+                        <span class="color_tab">已享优惠:省19.50 </span>
+                        <span>第二支半价,第三支免费</span>
+                        <span class="glyphicon glyphicon-forward"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="content_one">
+                <td height="100px" width="100px">
+                    <div class="img_content">
+                        <input type="checkbox" style="text-align: left">
+                        <img src="photo/comment.jpg_400x400.jpg" style="height: 100px;width: 100px">
+                        <span>美康粉黛醉美唇膏 持久保湿</span>  <span class="c">颜色:12#川南玛瑙 包装:裸装</span>
+                    </div>
+                </td>
+                <td>
+                    <p><s>78.00</s></p>
+                    <p>39.00</p>
+                </td>
+                <td>
+                    - <label><input type="text" value="1" style="width: 20px"></label> +
+                </td>
+                <td>117.00</td>
+                <td>
+                    <p>移入收藏夹</p>
+                    <p>删除</p>
+                </td>
+            </tr>
+            <tr>
+                <td><p></p></td>
+            </tr>
+            <tr style="height: 60px;background: #c9e2b3;">
+                <td colspan="5" style="text-align: left">
+                    <div class="last_tab">
+                        <input type="checkbox">
+                        <span>全选   删除   移入收藏夹</span>
+                    </div>
+                    <div class="last_tab_2">
+                        <span>已选商品 0 件</span>
+                        <span class="color_tab">合计:0.00</span>
+                        <button style="height: 60px" class="btn-danger">结算</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
